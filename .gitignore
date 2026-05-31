@@ -3,8 +3,9 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/.
-# Ignore Spring Boot configuration
-./application.properties
+# Ignore Spring Boot configuration and secrets
+src/main/resources/application.properties
+.env
 
 
 ### STS ###

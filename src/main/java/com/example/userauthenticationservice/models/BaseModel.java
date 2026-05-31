@@ -1,6 +1,8 @@
 package com.example.userauthenticationservice.models;
 
 
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -22,5 +24,6 @@ public abstract class BaseModel {
 
     private Date lastUpdatedAt;
 
+    @Enumerated(EnumType.STRING)
     private Status status;
 }
